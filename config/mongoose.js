@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb://127.0.0.1:27017/issue_tracker';
+const url = 'mongodb+srv://shoaibahmad269:A12345@cluster0.whfoccl.mongodb.net/';
 
 
 
