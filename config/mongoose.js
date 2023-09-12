@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 dbUrl =
   "mongodb+srv://shoaibahmad269:ShoaibA123067@shoaibapi.apta8jm.mongodb.net/Issue-tracker?retryWrites=true&w=majority" ||
-  "mongodb://localhost/Issue-tracker";
+  //"mongodb://localhost/Issue-tracker";
 mongoose.connect(dbUrl);
 const db = mongoose.connection;
 // error
