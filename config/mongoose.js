@@ -1,13 +1,22 @@
-const mongoose = require("mongoose");
-const dbUrl ="mongodb://127.0.0.1:27017/issue_tracker"
-  
-  //"mongodb://localhost/Issue-tracker";
-mongoose.connect(dbUrl);
-const db = mongoose.connection;
-// error
-db.on("error", console.error.bind(console, "erroe connecting to db"));
-// up and running then message
-db.once("open", function () {
-  console.log("Success fully connected to the database");
+const mongoose = require('mongoose');
+const url = 'mongodb://127.0.0.1:27017/issue_tracker';
+
+
+
+
+// mongoose.connect('url') 
+mongoose.connect(url);
+const db=mongoose.connection;
+
+
+
+
+//If any Error then Getting this Line
+db.on('error',console.error.bind(console,"Error connecting to MongoDB"));   
+
+
+db.once('open',()=>{
+    console.log("Connected to Database :: MongoDB ")
 });
-module.exports = db;
+
+module.exports=db;  //Exports db
