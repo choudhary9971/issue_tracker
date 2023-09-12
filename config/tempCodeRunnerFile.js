@@ -1,1 +1,0 @@
-mongodb+srv://shoaibahmad269:ShoaibA123067@shoaibapi.apta8jm.mongodb.net/Issue-tracker?retryWrites=true&w=majority

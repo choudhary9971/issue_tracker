@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-dbUrl ="mongodb://127.0.0.1:27017/issue_tracker"
+const dbUrl ="mongodb://127.0.0.1:27017/issue_tracker"
   
   //"mongodb://localhost/Issue-tracker";
 mongoose.connect(dbUrl);
